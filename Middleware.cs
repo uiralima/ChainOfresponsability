@@ -17,6 +17,10 @@ namespace ChainOfresponsability
             {
                 next.Execute(context);
             }
+            else
+            {
+                return;
+            }
         }
     }
 }

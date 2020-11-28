@@ -7,9 +7,10 @@ namespace ChainOfresponsability.Middlewares
 {
     public class MidSetContentType : Middleware
     {
+
         public override void Execute(AppHttpContext context)
         {
-            context.Context.Response.ContentType = "text/plain";
+            context.Context.Response.ContentType = "text/html";
             Next(context);
         }
     }
