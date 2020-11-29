@@ -8,7 +8,12 @@ namespace ChainOfresponsability
 {
     public abstract class Middleware
     {
-        public abstract void Execute(AppHttpContext context);
+        protected abstract void Execute(AppHttpContext context);
+
+        public void Act(AppHttpContext context)
+        {
+            Execute(context);
+        }
 
         protected void Next(AppHttpContext context)
         {

@@ -5,11 +5,11 @@ using System.Web;
 
 namespace ChainOfresponsability.Middlewares
 {
-    public class IdentificarDispositivo : Middleware
+    public class CustomersJsonMid : Middleware
     {
         protected override void Execute(AppHttpContext context)
         {
-            context["Device"] = context.Context.Request.Headers["app-device"] ?? String.Empty;
+            context.Context.Response.Write("[{\"id\": 1, \"nome\": \"Nome do cliente 01\"}, {\"id\": 2, \"nome\": \"Nome do cliente 02\"}]");
             Next(context);
         }
     }

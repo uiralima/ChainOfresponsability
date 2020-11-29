@@ -5,11 +5,11 @@ using System.Web;
 
 namespace ChainOfresponsability.Middlewares
 {
-    public class CerragarRoles : Middleware
+    public class MidHelloWorldHtml : Middleware
     {
-        public override void Execute(AppHttpContext context)
+        protected override void Execute(AppHttpContext context)
         {
-            context.Context.Response.Write("Carregando Regras<br />");
+            context.Context.Response.Write("<h1>Hello World</h1>");
             Next(context);
         }
     }

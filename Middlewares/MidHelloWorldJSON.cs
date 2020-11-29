@@ -5,11 +5,11 @@ using System.Web;
 
 namespace ChainOfresponsability.Middlewares
 {
-    public class IdentificarDispositivo : Middleware
+    public class MidHelloWorldJSON : Middleware
     {
         protected override void Execute(AppHttpContext context)
         {
-            context["Device"] = context.Context.Request.Headers["app-device"] ?? String.Empty;
+            context.Context.Response.Write("{ \"message\": \"Hello World\", \"devcice\": \"" + context["Device"] + "\" }");
             Next(context);
         }
     }
