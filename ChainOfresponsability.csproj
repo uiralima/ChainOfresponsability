@@ -71,15 +71,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
-    <Compile Include="AppHttpcontext.cs" />
     <Compile Include="BuildContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IContextBuilder.cs" />
-    <Compile Include="Middleware.cs" />
-    <Compile Include="MiddlewareContext.cs" />
     <Compile Include="Middlewares\CustomersJsonMid.cs" />
     <Compile Include="Middlewares\IdentificarDispositivo.cs" />
     <Compile Include="Middlewares\MidHelloWorldHtml.cs" />
@@ -96,6 +91,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChainOfresponsability.Framework\ChainOfresponsability.Framework.csproj">
+      <Project>{f1462cbc-86ff-44e7-b71a-b2c0aa486ba3}</Project>
+      <Name>ChainOfresponsability.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

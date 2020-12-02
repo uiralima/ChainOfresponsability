@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfresponsability", "ChainOfresponsability.csproj", "{03CBC439-D47A-4765-B3C4-0280FBA2B620}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfresponsability.Framework", "..\ChainOfresponsability.Framework\ChainOfresponsability.Framework.csproj", "{F1462CBC-86FF-44E7-B71A-B2C0AA486BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomarImagens", "..\SomarImagens\SomarImagens.csproj", "{7B5DFCE7-5120-41E4-87BC-A38D4380A650}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{03CBC439-D47A-4765-B3C4-0280FBA2B620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03CBC439-D47A-4765-B3C4-0280FBA2B620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03CBC439-D47A-4765-B3C4-0280FBA2B620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1462CBC-86FF-44E7-B71A-B2C0AA486BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1462CBC-86FF-44E7-B71A-B2C0AA486BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1462CBC-86FF-44E7-B71A-B2C0AA486BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1462CBC-86FF-44E7-B71A-B2C0AA486BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5DFCE7-5120-41E4-87BC-A38D4380A650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5DFCE7-5120-41E4-87BC-A38D4380A650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5DFCE7-5120-41E4-87BC-A38D4380A650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5DFCE7-5120-41E4-87BC-A38D4380A650}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
